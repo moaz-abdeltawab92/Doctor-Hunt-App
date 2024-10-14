@@ -16,20 +16,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Positioned(
-          //   bottom: 420,
-          //   top: -100,
-          //   left: -80,
-          //   child: Container(
-          //     width: 290,
-          //     height: 370,
-          //     decoration: BoxDecoration(
-          //       color: const Color.fromARGB(255, 60, 194, 154),
-          //       shape: BoxShape.circle,
-          //     ),
-          //   ),
-          // ),
-          //
           PageView(
             controller: _pageController,
             onPageChanged: (int index) {

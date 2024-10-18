@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
 
 class Homescreen extends StatelessWidget {
@@ -6,6 +7,7 @@ class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.white,
       body: Center(
         child: Text('Homescreen'),
       ),

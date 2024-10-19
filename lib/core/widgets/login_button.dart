@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Login_button extends StatelessWidget {
+class Login extends StatelessWidget {
   final String text;
-  const Login_button({
+  const Login({
     super.key,
     required this.text,
   });

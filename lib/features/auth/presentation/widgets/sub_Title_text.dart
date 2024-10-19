@@ -1,17 +1,25 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
 
 class SubTitle extends StatelessWidget {
+  final String text;
+  final Color color;
+  final double fontSize;
+
   const SubTitle({
     super.key,
+    required this.text,
+    this.color = AppColors.subtext,
+    this.fontSize = 15,
   });
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      "You can search course, apply course and find scholarship for abroad studies",
+    return Text(
+      text,
       style: TextStyle(
-        color: Color.fromARGB(255, 129, 128, 128),
-        fontSize: 15,
+        color: color,
+        fontSize: fontSize,
       ),
       textAlign: TextAlign.center,
     );

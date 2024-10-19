@@ -1,10 +1,10 @@
 import 'package:doctor_hunt/core/helpers/spacer.dart';
 import 'package:doctor_hunt/features/auth/presentation/screens/signup_screen.dart';
 import 'package:doctor_hunt/features/auth/presentation/widgets/Social_Login_Buttons.dart';
-import 'package:doctor_hunt/features/auth/presentation/widgets/dont_hava_account.dart';
+import 'package:doctor_hunt/features/auth/presentation/widgets/account_status_widget.dart';
 import 'package:doctor_hunt/features/auth/presentation/widgets/forgot_password.dart';
 import 'package:doctor_hunt/features/auth/presentation/widgets/head_text.dart';
-import 'package:doctor_hunt/features/auth/presentation/widgets/login_button.dart';
+import 'package:doctor_hunt/core/widgets/login_button.dart';
 import 'package:doctor_hunt/features/auth/presentation/widgets/sub_Title_text.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +47,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 headText: "Welcome back",
               ),
               verticalSpace(10),
-              const SubTitle(),
+              const SubTitle(
+                text:
+                    "You can search course, apply course and find scholarship for abroad studies",
+              ),
               verticalSpace(70),
               const SocialLoginButtons(),
               verticalSpace(40),
@@ -110,13 +113,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               verticalSpace(15),
-              Login_button(
+              const Login(
                 text: "Login",
               ),
               verticalSpace(8),
               const forgotPassword(),
               verticalSpace(100),
-              dontHaveAccount(
+              AccountStatus(
                 onTap: () {
                   Navigator.push(
                     context,

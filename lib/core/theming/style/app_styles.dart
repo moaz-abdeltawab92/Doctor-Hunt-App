@@ -9,12 +9,17 @@ class AppTextStyles {
     color: Colors.black,
   );
   static const TextStyle title = TextStyle(
-    fontSize: 26,
+    fontSize: 28,
     fontWeight: FontWeight.bold,
   );
   static TextStyle description = TextStyle(
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: FontWeight.bold,
-    color: Colors.black,
+    color: Colors.grey,
+  );
+  static TextStyle accountStatus = TextStyle(
+    fontSize: 14,
+    //fontWeight: FontWeight.bold,
+    color: Color(0xFF0EBE7F),
   );
 }

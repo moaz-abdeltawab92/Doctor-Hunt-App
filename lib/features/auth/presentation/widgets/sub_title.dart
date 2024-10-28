@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class SubTitle extends StatelessWidget {
@@ -9,18 +10,15 @@ class SubTitle extends StatelessWidget {
   const SubTitle({
     super.key,
     required this.text,
-    this.color = AppColors.subtext,
-    this.fontSize = 15,
+    this.color = AppColors.description,
+    this.fontSize = 14,
   });
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: TextStyle(
-        color: color,
-        fontSize: fontSize,
-      ),
+      style: AppTextStyles.description,
       textAlign: TextAlign.center,
     );
   }

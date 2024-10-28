@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:doctor_hunt/features/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,20 +9,16 @@ class Skip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => LoginScreen()),
-        );
-      },
-      child: const Text(
-        'Skip',
-        style: TextStyle(
-          fontSize: 16,
-          color: Color.fromARGB(255, 121, 121, 121),
+    return TextButton(
+        child: Text(
+          'Skip',
+          style: AppTextStyles.skipbutton,
         ),
-      ),
-    );
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const LoginScreen()),
+          );
+        });
   }
 }

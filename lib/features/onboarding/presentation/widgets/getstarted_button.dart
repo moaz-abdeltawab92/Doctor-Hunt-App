@@ -1,3 +1,5 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:doctor_hunt/features/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,15 +28,15 @@ class GetStarted extends StatelessWidget {
         }
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xFF3FBD97),
+        backgroundColor: AppColors.buttonColor,
         padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 15),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
       ),
-      child: const Text(
+      child: Text(
         'Get Started',
-        style: TextStyle(fontSize: 18, color: Colors.white),
+        style: AppTextStyles.getstarted,
       ),
     );
   }

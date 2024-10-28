@@ -120,7 +120,7 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 8.r,
           ),
           borderSide: BorderSide(
-            color: AppColors.red,
+            color: AppColors.white,
             width: 1.w,
           ),
         ),
@@ -130,7 +130,7 @@ class AppTextFormField extends StatelessWidget {
             radius?.r ?? 8.r,
           ),
           borderSide: BorderSide(
-            color: AppColors.red,
+            color: AppColors.white,
             width: 1.w,
           ),
         ),

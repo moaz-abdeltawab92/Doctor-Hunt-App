@@ -1,13 +1,8 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_styles.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/circle_avatar.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/getstarted_button.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/shape.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/skipbutton.dart';
+import 'package:doctor_hunt/core/routing/onboarding_item_routes.dart';
 import 'package:flutter/material.dart';
 
-class onBoardinItemBody extends StatelessWidget {
-  const onBoardinItemBody({
+class OnBoardinItemBody extends StatelessWidget {
+  const OnBoardinItemBody({
     super.key,
     required this.imagePath,
     required this.title,
@@ -24,7 +19,7 @@ class onBoardinItemBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Positioned(bottom: 420, top: -100, left: -80, child: shape()),
+        const Positioned(bottom: 420, top: -100, left: -80, child: Shape()),
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -39,7 +34,7 @@ class onBoardinItemBody extends StatelessWidget {
             ),
             verticalSpace(40),
             GetStarted(pageController: pageController),
-            verticalSpace(20),
+            verticalSpace(5),
             const Skip(),
           ],
         ),

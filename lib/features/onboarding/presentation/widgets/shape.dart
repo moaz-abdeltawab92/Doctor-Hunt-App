@@ -1,7 +1,8 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
 
-class shape extends StatelessWidget {
-  const shape({
+class Shape extends StatelessWidget {
+  const Shape({
     super.key,
   });
 
@@ -11,7 +12,7 @@ class shape extends StatelessWidget {
       width: 290,
       height: 370,
       decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 60, 194, 154),
+        color: AppColors.buttonColor,
         shape: BoxShape.circle,
       ),
     );

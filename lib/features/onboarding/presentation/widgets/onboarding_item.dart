@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/constants/app_string.dart';
 import 'package:doctor_hunt/features/onboarding/presentation/widgets/on_boarding_item_body.dart';
 import 'package:flutter/material.dart';
 
@@ -17,10 +18,10 @@ class OnboardingItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return onBoardinItemBody(
+    return OnBoardinItemBody(
         imagePath: imagePath,
         title: title,
-        description: description,
+        description: AppString.descriptionOnboarding,
         pageController: pageController);
   }
 }

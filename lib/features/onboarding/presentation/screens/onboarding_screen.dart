@@ -1,3 +1,5 @@
+import 'package:doctor_hunt/core/constants/app_assets.dart';
+import 'package:doctor_hunt/core/constants/app_string.dart';
 import 'package:doctor_hunt/features/onboarding/presentation/widgets/onboarding_item.dart';
 import 'package:flutter/material.dart';
 
@@ -25,24 +27,21 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           },
           children: [
             OnboardingItem(
-              imagePath: 'assets/doctor.png',
+              imagePath: AppAssets.onboarding1,
               title: 'Find Trusted Doctors',
-              description:
-                  'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.',
+              description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),
             OnboardingItem(
-              imagePath: 'assets/nurse.png',
+              imagePath: AppAssets.onboarding2,
               title: 'Choose Best Doctors',
-              description:
-                  'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.',
+              description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),
             OnboardingItem(
-              imagePath: 'assets/onboard3.png',
+              imagePath: AppAssets.onboarding3,
               title: 'Easy Appointments',
-              description:
-                  'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of it over 2000 years old.',
+              description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),
           ],

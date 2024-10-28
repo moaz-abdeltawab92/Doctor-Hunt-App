@@ -1,7 +1,8 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
 
-class forgotPassword extends StatelessWidget {
-  const forgotPassword({
+class ForgotPassword extends StatelessWidget {
+  const ForgotPassword({
     super.key,
   });
 
@@ -9,7 +10,7 @@ class forgotPassword extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Text(
       "Forgot Password?",
-      style: TextStyle(color: Color(0xFF0EBE7F)),
+      style: TextStyle(color: AppColors.buttonColor),
     );
   }
 }

@@ -51,6 +51,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
       children: [
         if (isSelected)
           Container(
+            //! TODO:   Make the container more responsive
+
             width: 50.0,
             height: 50.0,
             decoration: BoxDecoration(

@@ -13,6 +13,9 @@ class FeatureDoctorCard extends StatefulWidget {
 }
 
 List<Map<String, String>> doctorsList = [
+  //! TODO: Use App Strings file instead
+  //! TODO: Make this list in a file alone
+
   {
     'image': AppAssets.featuredoctor1,
     'name': 'Dr. Crick',

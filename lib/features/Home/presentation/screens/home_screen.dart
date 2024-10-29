@@ -19,6 +19,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: const BottomNavigation(),
+      //! TODO: Use App Colors file instead
+
       backgroundColor: Colors.grey[200],
       body: SingleChildScrollView(
         child: Column(
@@ -34,6 +36,8 @@ class _HomePageState extends State<HomePage> {
             const PopularDoctorCard(),
             verticalSpace(10),
             const PopularDoctor(
+              //! TODO: Use App Strings file instead
+
               text1: "Feature Doctor",
             ),
             const FeatureDoctorCard(),

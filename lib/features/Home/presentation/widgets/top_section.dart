@@ -16,6 +16,8 @@ class TopSection extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
+            //! TODO: Use App Colors file instead
+
             Color(0xFF0EBE7E),
             Color(0xFF07D9AD),
           ],

@@ -16,6 +16,8 @@ class Categories extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         child: Row(children: [
           const GradientBox(
+            //! TODO: Use App Colors file instead
+
             gradientStart: Color(0xFF2753F3),
             gradientEnd: Color(0xFF765AFC),
             imagePath: AppAssets.teeth,

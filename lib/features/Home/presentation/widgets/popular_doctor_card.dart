@@ -12,6 +12,8 @@ class PopularDoctorCard extends StatefulWidget {
   @override
   State<PopularDoctorCard> createState() => _PopularDoctorCardState();
 }
+//! TODO: Make this list in a file alone
+//! TODO: Use App Strings file instead
 
 List<Map<String, String>> doctorsList = [
   {

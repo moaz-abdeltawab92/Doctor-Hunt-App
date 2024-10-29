@@ -15,9 +15,11 @@ class GradientBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      //! TODO: Make this more responsive
       width: 85,
       height: 95,
       decoration: BoxDecoration(
+        //! TODO: Make this more responsive
         borderRadius: BorderRadius.circular(10),
         gradient: LinearGradient(
           begin: Alignment.topLeft,

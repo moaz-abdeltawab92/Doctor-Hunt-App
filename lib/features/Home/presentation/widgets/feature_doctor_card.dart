@@ -1,9 +1,10 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
 import 'package:doctor_hunt/core/helpers/spacer.dart';
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:doctor_hunt/core/theming/style/font_weight_helper.dart';
+import 'package:doctor_hunt/features/Home/presentation/widgets/feature_doctor_list.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FeatureDoctorCard extends StatefulWidget {
   const FeatureDoctorCard({super.key});
@@ -11,34 +12,6 @@ class FeatureDoctorCard extends StatefulWidget {
   @override
   State<FeatureDoctorCard> createState() => _FeatureDoctorCardState();
 }
-
-List<Map<String, String>> doctorsList = [
-  {
-    'image': AppAssets.featuredoctor1,
-    'name': 'Dr. Crick',
-    'price': ' 25.00/ hours',
-    'rating': '3.7',
-  },
-  {
-    'image': AppAssets.featuredoctor2,
-    'name': 'Dr. Strain',
-    'price': ' 22.00/ hours',
-    'rating': '3.0',
-  },
-  {
-    'image': AppAssets.featuredoctor3,
-    'name': 'Dr. Lachinet',
-    'price': ' 29.00/ hours',
-    'rating': '2.9',
-  },
-  {
-    'image': AppAssets.featuredoctor4,
-    'name': 'Dr. Young',
-    'specialty': 'Medicine Specialist',
-    'price': ' 30.00/ hours',
-    'rating': '3.5',
-  },
-];
 
 class _FeatureDoctorCardState extends State<FeatureDoctorCard> {
   List<bool> isLikedList = List.generate(doctorsList.length, (index) => false);
@@ -48,7 +21,7 @@ class _FeatureDoctorCardState extends State<FeatureDoctorCard> {
     return Padding(
       padding: const EdgeInsets.all(10),
       child: SizedBox(
-        height: 185,
+        height: 185.h,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           itemCount: doctorsList.length,
@@ -60,42 +33,45 @@ class _FeatureDoctorCardState extends State<FeatureDoctorCard> {
                 padding: const EdgeInsets.all(0),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        IconButton(
-                          icon: Icon(
-                            isLikedList[index]
-                                ? Icons.favorite
-                                : Icons.favorite_border,
-                            color:
-                                isLikedList[index] ? Colors.red : Colors.grey,
-                            size: 20,
-                          ),
-                          onPressed: () {
-                            setState(() {
-                              isLikedList[index] = !isLikedList[index];
-                            });
-                          },
-                        ),
-                        horizontalSpace(30),
-                        Row(
-                          children: [
-                            const Icon(
-                              Icons.star,
-                              color: Colors.amber,
-                              size: 20,
+                    Padding(
+                      padding: const EdgeInsets.only(right: 9),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          IconButton(
+                            icon: Icon(
+                              isLikedList[index]
+                                  ? Icons.favorite
+                                  : Icons.favorite_border,
+                              color:
+                                  isLikedList[index] ? Colors.red : Colors.grey,
+                              size: 20.sp,
                             ),
-                            horizontalSpace(3),
-                            Text(doctor['rating']!,
-                                style: const TextStyle(
-                                    fontWeight: FontWeightHelper.extraBold)),
-                          ],
-                        ),
-                      ],
+                            onPressed: () {
+                              setState(() {
+                                isLikedList[index] = !isLikedList[index];
+                              });
+                            },
+                          ),
+                          horizontalSpace(30),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.star,
+                                color: Colors.amber,
+                                size: 17.sp,
+                              ),
+                              horizontalSpace(3),
+                              Text(doctor['rating']!,
+                                  style: const TextStyle(
+                                      fontWeight: FontWeightHelper.extraBold)),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                     CircleAvatar(
-                      radius: 35,
+                      radius: 35.r,
                       backgroundImage: AssetImage(doctor['image']!),
                     ),
                     verticalSpace(6),

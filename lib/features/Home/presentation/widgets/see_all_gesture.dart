@@ -1,3 +1,4 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class SeeAll extends StatelessWidget {
           ),
           Icon(
             Icons.chevron_right,
-            color: Colors.grey[600],
+            color: AppColors.grey2,
           ),
         ],
       ),

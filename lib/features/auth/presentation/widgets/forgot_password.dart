@@ -1,4 +1,5 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/constants/app_string.dart';
+import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPassword extends StatelessWidget {
@@ -8,9 +9,9 @@ class ForgotPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      "Forgot Password?",
-      style: TextStyle(color: AppColors.buttonColor),
+    return Text(
+      AppString.fogotpassword,
+      style: AppTextStyles.forgotpassword,
     );
   }
 }

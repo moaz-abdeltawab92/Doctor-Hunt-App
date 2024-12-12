@@ -1,6 +1,6 @@
+import 'package:doctor_hunt/core/constants/app_string.dart';
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:doctor_hunt/core/theming/style/app_styles.dart';
-import 'package:doctor_hunt/features/auth/presentation/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class GetStarted extends StatelessWidget {
@@ -16,10 +16,10 @@ class GetStarted extends StatelessWidget {
     return ElevatedButton(
       onPressed: () {
         if (pageController.page == 2) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const LoginScreen()),
-          );
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(builder: (context) => const LoginScreen()),
+          // );
         } else {
           pageController.nextPage(
             duration: const Duration(milliseconds: 200),
@@ -35,7 +35,7 @@ class GetStarted extends StatelessWidget {
         ),
       ),
       child: Text(
-        'Get Started',
+        AppString.getstartedbutton,
         style: AppTextStyles.getstarted,
       ),
     );

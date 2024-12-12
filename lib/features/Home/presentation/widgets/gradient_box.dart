@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GradientBox extends StatelessWidget {
   final Color gradientStart;
@@ -15,10 +16,10 @@ class GradientBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 85,
-      height: 95,
+      width: 85.w,
+      height: 95.h,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(10.r),
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
@@ -31,7 +32,7 @@ class GradientBox extends StatelessWidget {
         ),
       ),
       child: Transform.scale(
-        scale: 0.5,
+        scale: 0.5.w,
         child: Image.asset(imagePath),
       ),
     );

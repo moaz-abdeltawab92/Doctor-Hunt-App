@@ -1,6 +1,8 @@
 import 'package:doctor_hunt/core/constants/app_assets.dart';
 import 'package:doctor_hunt/core/helpers/spacer.dart';
+import 'package:doctor_hunt/core/theming/style/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TopSection extends StatelessWidget {
   const TopSection({
@@ -11,8 +13,8 @@ class TopSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(40),
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
@@ -22,8 +24,8 @@ class TopSection extends StatelessWidget {
           stops: [0.0084, 0.9565],
         ),
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(50),
-          bottomRight: Radius.circular(50),
+          bottomLeft: Radius.circular(50.r),
+          bottomRight: Radius.circular(50.r),
         ),
       ),
       child: Column(
@@ -36,27 +38,14 @@ class TopSection extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   verticalSpace(20),
-                  const Text(
-                    "Hi Handwerker! ",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 17,
-                    ),
-                  ),
+                  Text("Hi Handwerker! ", style: AppTextStyles.welcomemessage),
                   verticalSpace(8),
-                  const Text(
-                    "Find Your Doctor",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  Text("Find Your Doctor", style: AppTextStyles.tophomemessage),
                 ],
               ),
-              const CircleAvatar(
-                radius: 33,
-                backgroundImage: AssetImage(AppAssets.topsection),
+              CircleAvatar(
+                radius: 33.r,
+                backgroundImage: const AssetImage(AppAssets.topsection),
               ),
             ],
           ),

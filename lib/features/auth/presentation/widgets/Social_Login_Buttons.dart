@@ -3,6 +3,7 @@
 import 'package:doctor_hunt/core/helpers/spacer.dart';
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SocialLoginButtons extends StatelessWidget {
@@ -25,8 +26,8 @@ class SocialLoginButtons extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 "assets/Group.svg",
-                height: 24,
-                width: 24,
+                height: 24.h,
+                width: 24.w,
               ),
               horizontalSpace(10),
               const Text(
@@ -49,8 +50,8 @@ class SocialLoginButtons extends StatelessWidget {
             children: [
               SvgPicture.asset(
                 "assets/Group 2.svg",
-                height: 24,
-                width: 24,
+                height: 24.h,
+                width: 24.w,
               ),
               horizontalSpace(10),
               const Text(

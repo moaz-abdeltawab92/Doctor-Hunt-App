@@ -1,12 +1,13 @@
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/Home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class AuthButton extends StatelessWidget {
   final String text;
+  final void Function()? onPressed;
   const AuthButton({
     super.key,
     required this.text,
+    required this.onPressed,
   });
 
   @override
@@ -14,12 +15,7 @@ class AuthButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 30),
       child: ElevatedButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const HomePage()),
-          );
-        },
+        onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.buttonColor,
           padding: const EdgeInsets.symmetric(horizontal: 115),

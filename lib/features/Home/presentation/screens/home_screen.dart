@@ -1,11 +1,6 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/bottom_navigation.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/categories.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/feature_doctor_card.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/popular_doctor.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/popular_doctor_card.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/top_section.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/homepage_routes.dart';
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import '../widgets/popular_doctor_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -19,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: const BottomNavigation(),
-      backgroundColor: Colors.grey[200],
+      backgroundColor: AppColors.backgroundColor,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,12 +24,12 @@ class _HomePageState extends State<HomePage> {
             const Categories(),
             verticalSpace(20),
             const PopularDoctor(
-              text1: "Popular Doctor",
+              text1: AppString.populardoctors,
             ),
             const PopularDoctorCard(),
             verticalSpace(10),
             const PopularDoctor(
-              text1: "Feature Doctor",
+              text1: AppString.featuredoctors,
             ),
             const FeatureDoctorCard(),
           ],

@@ -9,7 +9,7 @@ class AppAssets {
   static const String stomach = 'assets/Groupp.png';
 
   static const String firstdoctor = 'assets/Rectangle 508.png';
-  static const String seconddoctor = 'assets/Rectangle 508 (1).png';
+  static const String seconddoctor = 'assets/popdoc.jpg';
 
   static const String featuredoctor1 = 'assets/Ellipse 141.png';
   static const String featuredoctor2 = 'assets/Ellipse 141 (1).png';

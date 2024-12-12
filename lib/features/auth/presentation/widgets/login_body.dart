@@ -1,5 +1,7 @@
+import 'package:doctor_hunt/core/DI/dependency_ingection.dart';
 import 'package:doctor_hunt/core/constants/app_string.dart';
 import 'package:doctor_hunt/core/routing/auth_routes.dart';
+import 'package:doctor_hunt/features/auth/Data/repo/login_repo.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatefulWidget {
@@ -11,32 +13,36 @@ class LoginBody extends StatefulWidget {
 
 class _LoginBodyState extends State<LoginBody> {
   bool isObscure = true;
+  TextEditingController email = TextEditingController();
+  TextEditingController password = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         const HeadText(
-          headText: "Welcome back",
+          headText: AppString.loginhead,
         ),
         verticalSpace(10),
-        const SubTitle(
+        SubTitle(
           text: AppString.subtitleAuth,
         ),
         verticalSpace(70),
         const SocialLoginButtons(),
         verticalSpace(40),
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 12),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
           child: EmailField(
+            controller: email,
             hintText: "itsmemamun1@gmail.com",
-            suffixIcon: Icon(Icons.check, color: Colors.grey),
+            suffixIcon: const Icon(Icons.check, color: Colors.grey),
           ),
         ),
         verticalSpace(15),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: PasswordField(
+            controller: password,
             hintText: "••••••••",
             isObscure: isObscure,
             toggleObscure: () {
@@ -47,7 +53,11 @@ class _LoginBodyState extends State<LoginBody> {
           ),
         ),
         verticalSpace(15),
-        const AuthButton(
+        AuthButton(
+          onPressed: () {
+            locator<LoginRepo>().loginRepo(
+                email: email.text, password: int.parse(password.text));
+          },
           text: "Login",
         ),
         verticalSpace(20),

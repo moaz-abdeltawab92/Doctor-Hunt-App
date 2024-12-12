@@ -1,4 +1,6 @@
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PrivacyPolicyText extends StatelessWidget {
   const PrivacyPolicyText({
@@ -7,26 +9,26 @@ class PrivacyPolicyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text.rich(
+    return Text.rich(
       TextSpan(
         text: 'I agree with the ',
         style: TextStyle(
-          fontSize: 12,
+          fontSize: 12.sp,
         ),
         children: [
           TextSpan(
             text: 'Terms of Service',
             style: TextStyle(
-              fontSize: 12,
-              color: Colors.black,
+              fontSize: 12.sp,
+              color: AppColors.primaryColor,
             ),
           ),
-          TextSpan(text: ' & '),
+          const TextSpan(text: ' & '),
           TextSpan(
             text: 'Privacy Policy',
             style: TextStyle(
-              fontSize: 12,
-              color: Colors.black,
+              fontSize: 12.sp,
+              color: AppColors.primaryColor,
             ),
           ),
         ],

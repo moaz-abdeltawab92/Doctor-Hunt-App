@@ -28,19 +28,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           children: [
             OnboardingItem(
               imagePath: AppAssets.onboarding1,
-              title: 'Find Trusted Doctors',
+              title: AppString.headonboarding1,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),
             OnboardingItem(
               imagePath: AppAssets.onboarding2,
-              title: 'Choose Best Doctors',
+              title: AppString.headonboarding2,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),
             OnboardingItem(
               imagePath: AppAssets.onboarding3,
-              title: 'Easy Appointments',
+              title: AppString.headonboarding3,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
             ),

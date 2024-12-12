@@ -1,5 +1,6 @@
 import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -51,8 +52,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
       children: [
         if (isSelected)
           Container(
-            width: 50.0,
-            height: 50.0,
+            width: 50.0.w,
+            height: 50.0.h,
             decoration: BoxDecoration(
               color: AppColors.bottomnavigation,
               shape: BoxShape.circle,

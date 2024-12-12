@@ -1,5 +1,4 @@
 import 'package:doctor_hunt/core/routing/homepage_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
 import '../widgets/popular_doctor_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -14,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: const BottomNavigation(),
-      backgroundColor: AppColors.backgroundColor,
+      backgroundColor: Colors.grey[200],
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,7 +28,7 @@ class _HomePageState extends State<HomePage> {
             const PopularDoctorCard(),
             verticalSpace(10),
             const PopularDoctor(
-              text1: AppString.featuredoctors,
+              text1: "Feature Doctor",
             ),
             const FeatureDoctorCard(),
           ],

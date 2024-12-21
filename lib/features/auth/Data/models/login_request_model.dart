@@ -1,7 +1,7 @@
 // ignore: file_names
 class LoginRequestModel {
   String? email;
-  int? password;
+  String? password;
 
   LoginRequestModel({
     required this.email,

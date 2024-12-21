@@ -4,8 +4,8 @@ class AuthentactionRequestModel {
   String? email;
   int? phoneNumber;
   int? gender;
-  int? password;
-  int? passwordConfirmation;
+  String? password;
+  String? passwordConfirmation;
 
   AuthentactionRequestModel(
       {required this.name,

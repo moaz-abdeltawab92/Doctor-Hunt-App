@@ -79,6 +79,7 @@ class AppTextFormField extends StatelessWidget {
               vertical: 16.0.h,
             ),
         focusedBorder: focusedBorder ??
+            //used on tab
             // focusedBorder: Uses the provided focusedBorder or defaults to an
             //OutlineInputBorder with a specific color and width.
             OutlineInputBorder(

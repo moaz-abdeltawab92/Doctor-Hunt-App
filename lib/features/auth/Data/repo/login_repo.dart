@@ -5,7 +5,7 @@ class LoginRepo {
 
   LoginRepo({required this.apiServiceLogin});
 
-  Future<void> loginRepo({String? email, int? password}) async {
+  Future<void> loginRepo({String? email, String? password}) async {
     apiServiceLogin.login(email: email, password: password);
   }
 }

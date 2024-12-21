@@ -86,7 +86,7 @@ class _SignupBodyState extends State<SignupBody> {
             ],
             onChanged: (value) {
               setState(() {
-                selectedGender = 0;
+                selectedGender = value!;
                 log('Selected Gender: $selectedGender');
               });
             },
@@ -146,15 +146,67 @@ class _SignupBodyState extends State<SignupBody> {
         ),
         verticalSpace(20),
         AuthButton(
-          onPressed: () {
-            locator<AuthRepo>().registerRepo(
-              name: _nameController.text,
-              email: _emailController.text,
-              phoneNumber: int.parse(_phoneController.text),
-              gender: selectedGender,
-              password: int.parse(_passwordController.text),
-              passwordConfirmation: int.parse(_confirmPasswordController.text),
+          onPressed: () async {
+            if (_nameController.text.isEmpty ||
+                _emailController.text.isEmpty ||
+                _phoneController.text.isEmpty ||
+                _passwordController.text.isEmpty ||
+                _confirmPasswordController.text.isEmpty) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Please fill all fields!'),
+                  backgroundColor: Colors.red,
+                ),
+              );
+              return;
+            }
+
+            if (_passwordController.text != _confirmPasswordController.text) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Passwords do not match!'),
+                  backgroundColor: Colors.red,
+                ),
+              );
+              return;
+            }
+
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Text('Signing up...'),
+                duration: Duration(seconds: 2),
+              ),
             );
+
+            try {
+              await locator<AuthRepo>().registerRepo(
+                name: _nameController.text,
+                email: _emailController.text,
+                phoneNumber: int.parse(_phoneController.text),
+                gender: selectedGender,
+                password: (_passwordController.text),
+                passwordConfirmation: (_confirmPasswordController.text),
+              );
+
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('Registration Successful!'),
+                  backgroundColor: Colors.green,
+                ),
+              );
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const LoginScreen()),
+              );
+            } catch (e) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Registration Failed: $e'),
+                  backgroundColor: Colors.red,
+                ),
+              );
+            }
           },
           text: "Sign up",
         ),

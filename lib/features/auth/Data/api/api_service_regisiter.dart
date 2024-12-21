@@ -1,40 +1,55 @@
 import 'dart:developer';
-
 import 'package:dio/dio.dart';
 import 'package:doctor_hunt/core/error/error_model.dart';
-import 'package:doctor_hunt/features/auth/Data/models/authentaction_request_model.dart';
-
+import '../models/authentaction_request_model.dart';
 import '../models/authentaction_response_sucess_model.dart';
 
 class ApiServiceRegisiter {
   Dio dio;
   ApiServiceRegisiter({required this.dio});
 
-  Future<void> register(
-      {String? name,
-      String? email,
-      int? phoneNumber,
-      int? gender,
-      int? password,
-      int? passwordConfirmation}) async {
+  Future<AuthentactionResponseSucessModel> register({
+    String? name,
+    String? email,
+    int? phoneNumber,
+    int? gender,
+    String? password,
+    String? passwordConfirmation,
+  }) async {
     AuthentactionRequestModel authentactionRequestModel =
         AuthentactionRequestModel(
-            name: name,
-            email: email,
-            phoneNumber: phoneNumber,
-            gender: gender,
-            password: password,
-            passwordConfirmation: passwordConfirmation);
+      name: name,
+      email: email,
+      phoneNumber: phoneNumber,
+      gender: gender,
+      password: password,
+      passwordConfirmation: passwordConfirmation,
+    );
+
     FormData formData = FormData.fromMap(authentactionRequestModel.toJson());
+
     try {
       Response response = await dio.post(
-          'https://vcare.integration25.com/api/auth/register',
-          data: formData);
-      log(AuthentactionResponseSucessModel.fromJson(response.data)
-          .data
-          .toString());
+        'https://vcare.integration25.com/api/auth/register',
+        data: formData,
+      );
+
+      //log('Full API Response: ${response.data.toString()}');
+      final successResponse =
+          AuthentactionResponseSucessModel.fromJson(response.data);
+
+      return successResponse;
     } on DioException catch (e) {
-      log(ErrorModel.fromJson(e.response!.data).status.toString());
+      if (e.response?.data is List) {
+        log('Error Response: ${e.response?.data}');
+        throw Exception(
+            'Registration failed: ${(e.response?.data as List).join(", ")}');
+      } else if (e.response?.data is Map<String, dynamic>) {
+        log('Error Response: ${e.response?.data}');
+        throw Exception('Registration failed: ${e.response?.data['message']}');
+      } else {
+        throw Exception('Registration failed: ${e.message}');
+      }
     }
   }
 }

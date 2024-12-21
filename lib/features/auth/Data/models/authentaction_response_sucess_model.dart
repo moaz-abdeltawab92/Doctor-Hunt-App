@@ -8,14 +8,19 @@ class AuthentactionResponseSucessModel {
 
   factory AuthentactionResponseSucessModel.fromJson(Map<String, dynamic> json) {
     return AuthentactionResponseSucessModel(
-      message: json['message'],
+      message: json['message'] is List
+          ? (json['message'] as List).join(", ")
+          : json['message'] ?? '',
       status: json['status'],
       code: json['code'],
-      data: DataModel.fromJson(json['data']),
+      data: json['data'] is Map<String, dynamic>
+          ? DataModel.fromJson(json['data'])
+          : null,
     );
   }
 }
 
+//data model
 class DataModel {
   String? token;
   String? username;

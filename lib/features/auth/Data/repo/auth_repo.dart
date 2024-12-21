@@ -1,24 +1,43 @@
-import 'package:doctor_hunt/features/auth/Data/api/api_service_regisiter.dart';
+import 'dart:developer';
+
+import 'secure_storage_service.dart';
+import '../api/api_service_regisiter.dart';
 
 class AuthRepo {
-  ApiServiceRegisiter apiService;
+  final ApiServiceRegisiter apiService;
+  final SecureStorageService secureStorage;
+
   AuthRepo({
     required this.apiService,
+    required this.secureStorage,
   });
 
-  Future<void> registerRepo(
-      {String? name,
-      String? email,
-      int? phoneNumber,
-      int? gender,
-      int? password,
-      int? passwordConfirmation}) async {
-    apiService.register(
+  Future<void> registerRepo({
+    String? name,
+    String? email,
+    int? phoneNumber,
+    int? gender,
+    String? password,
+    String? passwordConfirmation,
+  }) async {
+    try {
+      final response = await apiService.register(
         name: name,
         email: email,
         phoneNumber: phoneNumber,
         gender: gender,
         password: password,
-        passwordConfirmation: passwordConfirmation);
+        passwordConfirmation: passwordConfirmation,
+      );
+
+      final String? token = response.data?.token;
+
+      if (token != null) {
+        await secureStorage.saveToken(token);
+        log('Token saved successfully: $token');
+      }
+    } catch (e) {
+      throw Exception('Registration failed: $e');
+    }
   }
 }

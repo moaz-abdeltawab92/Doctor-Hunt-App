@@ -14,7 +14,7 @@ class DoctorLiveScreen extends StatefulWidget {
   State<DoctorLiveScreen> createState() => _DoctorLiveScreenState();
 }
 
-//TODO_ Refactor this Screen
+//TODO_ Refactor this Screen and use theming files for styling then make it responsive
 class _DoctorLiveScreenState extends State<DoctorLiveScreen> {
   @override
   Widget build(BuildContext context) {

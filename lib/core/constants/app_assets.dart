@@ -15,6 +15,14 @@ class AppAssets {
   static const String featuredoctor2 = 'assets/Ellipse 141 (1).png';
   static const String featuredoctor3 = 'assets/Ellipse 141 (2).png';
   static const String featuredoctor4 = 'assets/Ellipse 141 (3).png';
+  static const String chatLive = 'assets/chat_live.png';
+
+  static const String topChatLive = 'assets/top_chat.png';
+
+  static const String comment1 = 'assets/comment1.png';
+  static const String comment2 = 'assets/comment2.png';
+  static const String comment3 = 'assets/comment3.png';
+  static const String comment4 = 'assets/comment4.png';
 
   static const String topsection = 'assets/Ellipse 26.png';
 }

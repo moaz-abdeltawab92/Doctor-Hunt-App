@@ -25,7 +25,6 @@ class ApiServiceLogin {
         data: formData,
       );
 
-      // استخراج التوكين من استجابة الخادم
       final token =
           AuthentactionResponseSucessModel.fromJson(response.data).data?.token;
 

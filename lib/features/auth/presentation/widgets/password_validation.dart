@@ -1,6 +1,7 @@
 import 'package:doctor_hunt/core/helpers/spacer.dart';
 import 'package:flutter/material.dart';
 
+//Todo : Don't forget to use this file for password validation
 class PasswordValidation extends StatelessWidget {
   final bool hasUppercase;
   final bool hasLowercase;

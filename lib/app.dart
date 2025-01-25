@@ -1,9 +1,10 @@
+import 'package:doctor_hunt/features/Home/presentation/screens/doctor_live_screen.dart';
+import 'package:doctor_hunt/features/Home/presentation/screens/home_screen.dart';
 import 'package:doctor_hunt/features/auth/Data/repo/secure_storage_service.dart';
 import 'package:doctor_hunt/features/auth/presentation/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:doctor_hunt/features/auth/presentation/screens/login_screen.dart';
-import 'package:doctor_hunt/features/home/presentation/screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -39,11 +40,11 @@ class MyApp extends StatelessWidget {
               );
             }
 
-            final bool isLoggedIn = snapshot.data ?? false;
+            // final bool isLoggedIn = snapshot.data ?? false;
             return MaterialApp(
-              debugShowCheckedModeBanner: false,
-              home: isLoggedIn ? const LoginScreen() : const SignupScreen(),
-            );
+                debugShowCheckedModeBanner: false, home: DoctorLiveScreen()
+                //  isLoggedIn ? const LoginScreen() : const SignupScreen(),
+                );
           },
         );
       },

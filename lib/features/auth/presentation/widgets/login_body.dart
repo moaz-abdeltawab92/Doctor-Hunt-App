@@ -40,7 +40,6 @@ class _LoginBodyState extends State<LoginBody> {
         SubTitle(
           text: AppString.subtitleAuth,
         ),
-        verticalSpace(70),
         const SocialLoginButtons(),
         verticalSpace(40),
         Padding(
@@ -69,7 +68,6 @@ class _LoginBodyState extends State<LoginBody> {
         AuthButton(
           onPressed: () async {
             if (email.text.isEmpty || password.text.isEmpty) {
-              // إذا كانت الحقول فارغة
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
                   content: Text(
@@ -79,27 +77,10 @@ class _LoginBodyState extends State<LoginBody> {
                   backgroundColor: Colors.red,
                 ),
               );
-              return; // الخروج من الدالة
-            }
-
-            // التحقق من صيغة البريد الإلكتروني
-            final emailRegex = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
-            if (!emailRegex.hasMatch(email.text)) {
-              // إذا كان البريد الإلكتروني غير صحيح
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text(
-                    'Invalid email format. Please enter a valid email.',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  backgroundColor: Colors.red,
-                ),
-              );
-              return; // الخروج من الدالة
+              return;
             }
 
             try {
-              // إذا كانت البيانات صحيحة، استمر في العملية
               await locator<LoginRepo>().loginRepo(
                 email: email.text,
                 password: password.text,
@@ -118,10 +99,10 @@ class _LoginBodyState extends State<LoginBody> {
             } catch (e) {
               log('Login error: $e');
               ScaffoldMessenger.of(context).showSnackBar(
-                SnackBar(
+                const SnackBar(
                   content: Text(
                     'Login failed: Invalid email or password.',
-                    style: const TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white),
                   ),
                   backgroundColor: Colors.red,
                 ),

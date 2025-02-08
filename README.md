@@ -16,7 +16,7 @@ Doctor Hunt simplifies the process of finding doctors based on specialization an
 ## Preview
 
 Here is an overview of the app showcasing its main features:  
-![App Preview](https://raw.githubusercontent.com/moaz-abdeltawab92/doctor_hunt/master/879shots_so.png)
+![App Preview](https://github.com/moaz-abdeltawab92/doctor_hunt/blob/master/879shots_so.png)
 
 ## Getting Started
 

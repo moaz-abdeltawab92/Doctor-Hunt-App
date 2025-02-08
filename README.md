@@ -1,16 +1,28 @@
-# doctor_hunt
+# Doctor Hunt
 
-A new Flutter project.
+A Flutter application designed to help users find and connect with doctors easily.
+
+## Overview
+
+Doctor Hunt simplifies the process of finding doctors based on specialization and location. The app provides real-time search results and allows users to view detailed profiles of doctors, including their contact information and availability.
+
+## Features
+
+- **Doctor Search:** Search for doctors by specialization or name.
+- **Location-Based Results:** View doctors available near you.
+- **Doctor Profiles:** View detailed profiles, including contact info, availability, and more.
+- **Appointment Booking:** (Optional - mention if available).
+
+## Preview
+
+Here is an overview of the app showcasing its main features:  
+![App Preview](https://raw.githubusercontent.com/moaz-abdeltawab92/doctor_hunt/master/879shots_so.png)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To run the project locally:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/doctor_hunt.git
+   ```

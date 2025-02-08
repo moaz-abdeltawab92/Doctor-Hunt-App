@@ -22,10 +22,10 @@ Here is an overview of the app showcasing its main features:
 
 - **Flutter:** For building the cross-platform mobile application.
 - **Dart:** As the programming language.
-- **State Management:** Provider (or mention the one you used).
-- **APIs:** To fetch real-time doctor data (if applicable).
+- **State Management:** Bloc .
+- **APIs:** To fetch real-time doctor data.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.10.5-blue)
 ![Dart](https://img.shields.io/badge/Dart-2.20-green)
-![State Management](https://img.shields.io/badge/State%20Management-Provider-orange)
+![State Management](https://img.shields.io/badge/State%20Management-Bloc-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)

@@ -1,6 +1,7 @@
 import 'package:doctor_hunt/core/constants/app_assets.dart';
 import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_styles.dart';
+import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,16 +13,14 @@ class TopSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(40),
+      padding: EdgeInsets.all(40.r),
       decoration: BoxDecoration(
         gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            //! TODO: Use App Colors file instead
-
-            Color(0xFF0EBE7E),
-            Color(0xFF07D9AD),
+            AppColors.topSection,
+            AppColors.endOfTopSection,
           ],
           stops: [0.0084, 0.9565],
         ),
@@ -39,10 +38,10 @@ class TopSection extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  verticalSpace(20),
-                  Text("Hi Handwerker! ", style: AppTextStyles.welcomemessage),
-                  verticalSpace(8),
-                  Text("Find Your Doctor", style: AppTextStyles.tophomemessage),
+                  verticalSpace(20.h),
+                  Text('Hi Handwerker! ', style: AppTextStyles.welcomemessage),
+                  verticalSpace(8.h),
+                  Text('Find Your Doctor', style: AppTextStyles.tophomemessage),
                 ],
               ),
               CircleAvatar(
@@ -51,7 +50,7 @@ class TopSection extends StatelessWidget {
               ),
             ],
           ),
-          verticalSpace(20),
+          verticalSpace(20.h),
         ],
       ),
     );

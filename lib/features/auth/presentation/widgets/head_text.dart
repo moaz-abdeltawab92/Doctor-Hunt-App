@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/theming/style/app_styles.dart';
+import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class HeadText extends StatelessWidget {

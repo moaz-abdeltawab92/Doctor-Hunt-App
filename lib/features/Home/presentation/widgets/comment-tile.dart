@@ -1,5 +1,5 @@
+import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CommentTile extends StatelessWidget {
   final String name;
@@ -15,12 +15,11 @@ class CommentTile extends StatelessWidget {
       ),
       title: Text(
         name,
-        style: TextStyle(
-            color: Colors.white, fontSize: 17.sp, fontWeight: FontWeight.bold),
+        style: AppTextStyles.commentTitle,
       ),
       subtitle: Text(
         comment,
-        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        style: AppTextStyles.commentSubTitle,
       ),
       trailing: Icon(icon, color: iconColor),
     );

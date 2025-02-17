@@ -1,6 +1,6 @@
 import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_styles.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/see_all_gesture.dart';
+import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
+import 'package:doctor_hunt/features/Home/presentation/widgets/see_all_geasture.dart';
 import 'package:flutter/material.dart';
 
 class PopularDoctor extends StatelessWidget {

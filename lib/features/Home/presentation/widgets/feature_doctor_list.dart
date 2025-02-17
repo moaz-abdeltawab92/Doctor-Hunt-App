@@ -2,7 +2,7 @@ import 'package:doctor_hunt/core/constants/app_assets.dart';
 
 List<Map<String, String>> doctorsList = [
   {
-    'image': AppAssets.featuredoctor1,
+    'image': AppAssets.topChatLive,
     'name': 'Dr. Crick',
     'price': ' 25.00/ hours',
     'rating': '3.7',

@@ -2,6 +2,7 @@ class AppAssets {
   static const String onboarding1 = 'assets/doctor.png';
   static const String onboarding2 = 'assets/nurse.png';
   static const String onboarding3 = 'assets/onboard3.png';
+  static const String backgroundImage = 'assets/screen_background (1).png';
 
   static const String teeth = 'assets/Vector.png';
   static const String heart = 'assets/Group.png';
@@ -25,4 +26,15 @@ class AppAssets {
   static const String comment4 = 'assets/comment4.png';
 
   static const String topsection = 'assets/Ellipse 26.png';
+
+  static const String searchCard1 = 'assets/card1.png';
+  static const String searchCard2 = 'assets/card2.png';
+  static const String searchCard3 = 'assets/card3.png';
+  static const String searchCard4 = 'assets/card4.png';
+
+  static const String mapImage = 'assets/map.png';
+
+  static const String profile = 'assets/profilescreen.png';
+
+  static const String backButton = 'assets/back_button.svg';
 }

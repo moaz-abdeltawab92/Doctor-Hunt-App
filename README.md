@@ -1,16 +1,31 @@
-# doctor_hunt
+# Doctor Hunt
 
-A new Flutter project.
+A Flutter application designed to help users find and connect with doctors easily.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+Doctor Hunt simplifies the process of finding doctors based on specialization and location. The app provides real-time search results and allows users to view detailed profiles of doctors, including their contact information and availability.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Doctor Search:** Search for doctors by specialization or name.
+- **Location-Based Results:** View doctors available near you.
+- **Doctor Profiles:** View detailed profiles, including contact info, availability, and more.
+- **Appointment Booking:** (Optional - mention if available).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Preview
+
+Here is an overview of the app showcasing its main features:  
+![App Preview](https://raw.githubusercontent.com/moaz-abdeltawab92/Doctor-Hunt-App/master/879shots_so.png)
+
+## Technologies Used
+
+- **Flutter:** For building the cross-platform mobile application.
+- **Dart:** As the programming language.
+- **State Management:** Bloc .
+- **APIs:** To fetch real-time doctor data.
+
+![Flutter](https://img.shields.io/badge/Flutter-3.10.5-blue)
+![Dart](https://img.shields.io/badge/Dart-2.20-green)
+![State Management](https://img.shields.io/badge/State%20Management-Bloc-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)

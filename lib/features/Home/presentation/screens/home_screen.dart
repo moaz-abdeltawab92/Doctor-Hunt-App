@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/routing/homepage_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../widgets/popular_doctor_card.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,3 +36,4 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+

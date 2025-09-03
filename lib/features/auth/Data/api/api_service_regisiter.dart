@@ -1,7 +1,4 @@
-import 'dart:developer';
-import 'package:dio/dio.dart';
-import '../models/authentaction_request_model.dart';
-import '../models/authentaction_response_sucess_model.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class ApiServiceRegisiter {
   Dio dio;

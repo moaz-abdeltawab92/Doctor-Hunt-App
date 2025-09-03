@@ -1,11 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_heart.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/select_time_custom_starts_rating.dart';
-import 'package:doctor_hunt/features/appointment/widgets/text_rich.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CustomCard extends StatelessWidget {
   const CustomCard({super.key});
@@ -71,3 +64,4 @@ class CustomCard extends StatelessWidget {
     ]);
   }
 }
+

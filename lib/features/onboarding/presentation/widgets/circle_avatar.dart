@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class Circleavatar extends StatelessWidget {
   const Circleavatar({
@@ -17,3 +16,4 @@ class Circleavatar extends StatelessWidget {
     );
   }
 }
+

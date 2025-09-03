@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/features/appointment/widgets/active_and_inactive_appointment_items.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class ActiveAndInactiveAppointmentReminderListview extends StatefulWidget {
   const ActiveAndInactiveAppointmentReminderListview({super.key});
@@ -55,3 +53,4 @@ class _ActiveAndInactiveAppointmentReminderListview
     });
   }
 }
+

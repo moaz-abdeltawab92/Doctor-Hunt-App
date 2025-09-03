@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class FontWeightHelper {
   static const FontWeight thin = FontWeight.w100;
@@ -10,3 +10,4 @@ class FontWeightHelper {
   static const FontWeight bold = FontWeight.w700;
   static const FontWeight extraBold = FontWeight.w800;
 }
+

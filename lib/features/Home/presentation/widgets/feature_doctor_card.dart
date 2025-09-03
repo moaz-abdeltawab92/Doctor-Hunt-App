@@ -1,10 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/core/theming/style/font_weight_helper.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/feature_doctor_list.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class FeatureDoctorCard extends StatefulWidget {
   const FeatureDoctorCard({super.key});
@@ -99,3 +93,4 @@ class _FeatureDoctorCardState extends State<FeatureDoctorCard> {
     );
   }
 }
+

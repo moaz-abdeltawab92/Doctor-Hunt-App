@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_card_search.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SearchResultListView extends StatelessWidget {
   const SearchResultListView({super.key});
@@ -18,3 +16,4 @@ class SearchResultListView extends StatelessWidget {
         });
   }
 }
+

@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/see_all_geasture.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class PopularDoctor extends StatelessWidget {
   final String text1;
@@ -28,3 +25,4 @@ class PopularDoctor extends StatelessWidget {
     );
   }
 }
+

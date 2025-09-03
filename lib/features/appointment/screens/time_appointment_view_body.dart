@@ -1,10 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/widgets/custom_appbar.dart';
-import 'package:doctor_hunt/core/widgets/custom_background%20.dart';
-import 'package:doctor_hunt/features/appointment/widgets/custom_buttom_sheet.dart';
-import 'package:doctor_hunt/features/appointment/widgets/custom_date_picker.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class TimeAppointmentViewBody extends StatefulWidget {
   const TimeAppointmentViewBody({super.key});
@@ -71,3 +65,4 @@ class _TimeAppointmentViewBodyState extends State<TimeAppointmentViewBody> {
     );
   }
 }
+

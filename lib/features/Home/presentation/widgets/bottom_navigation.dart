@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -67,3 +65,4 @@ class _BottomNavigationState extends State<BottomNavigation> {
     );
   }
 }
+

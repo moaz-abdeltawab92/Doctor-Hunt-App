@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/widgets/Text_Form_fielddd.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class EmailField extends StatelessWidget {
   final String hintText;
@@ -39,3 +36,4 @@ class EmailField extends StatelessWidget {
     );
   }
 }
+

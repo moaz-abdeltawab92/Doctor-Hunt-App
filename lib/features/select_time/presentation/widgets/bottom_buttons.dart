@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/routing/profile_screen_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class BottomButtons extends StatelessWidget {
   const BottomButtons({super.key});
@@ -41,3 +40,4 @@ class BottomButtons extends StatelessWidget {
     );
   }
 }
+

@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_string.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/on_boarding_item_body.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class OnboardingItem extends StatelessWidget {
   final String imagePath;
@@ -25,3 +23,4 @@ class OnboardingItem extends StatelessWidget {
         pageController: pageController);
   }
 }
+

@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/features/auth/presentation/widgets/signup_screen_widget.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
@@ -8,3 +7,4 @@ class SignupScreen extends StatelessWidget {
     return const Scaffold(body: SignupScreenWidget());
   }
 }
+

@@ -1,12 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/widgets/custom_Appbar.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/add_comment_texy_field.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/chat_live_background.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/list_comments.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/profile_pic.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class DoctorLiveScreen extends StatefulWidget {
   const DoctorLiveScreen({super.key});
@@ -52,3 +44,4 @@ class _DoctorLiveScreenState extends State<DoctorLiveScreen> {
     );
   }
 }
+

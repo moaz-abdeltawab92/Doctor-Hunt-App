@@ -1,8 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/gradient_box.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class Categories extends StatelessWidget {
   const Categories({
@@ -46,3 +42,4 @@ class Categories extends StatelessWidget {
     );
   }
 }
+

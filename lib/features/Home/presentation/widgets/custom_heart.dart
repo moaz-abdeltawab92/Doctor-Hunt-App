@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CustomHeart extends StatefulWidget {
   const CustomHeart({
@@ -30,3 +28,4 @@ class _CustomHeartState extends State<CustomHeart> {
     );
   }
 }
+

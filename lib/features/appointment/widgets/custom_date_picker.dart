@@ -1,8 +1,4 @@
-import 'package:date_picker_plus/date_picker_plus.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CustomDatePicker extends StatelessWidget {
   final DateTime minDate;
@@ -21,7 +17,6 @@ class CustomDatePicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      //height: 0.45.sh,  // يأخذ 45% من ارتفاع الشاشة بشكل مباشر
       height: MediaQuery.of(context).size.height * 0.45.h,
       decoration: BoxDecoration(
         color: AppColors.white1,
@@ -54,3 +49,4 @@ class CustomDatePicker extends StatelessWidget {
     );
   }
 }
+

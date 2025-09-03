@@ -1,14 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/widgets/custom_Appbar.dart';
-import 'package:doctor_hunt/core/widgets/custom_background%20.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/bottom_navigation.dart';
-import 'package:doctor_hunt/features/appointment/widgets/appointment_field.dart';
-import 'package:doctor_hunt/features/appointment/widgets/custom_button.dart';
-import 'package:doctor_hunt/features/appointment/widgets/custom_card.dart';
-import 'package:doctor_hunt/features/appointment/widgets/patient_listview.dart';
-import 'package:doctor_hunt/features/appointment/widgets/who_is_patient_text.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class DoctorAppointmentScreen extends StatefulWidget {
   const DoctorAppointmentScreen({super.key});
@@ -53,3 +43,4 @@ class _DoctorAppointmentScreenState extends State<DoctorAppointmentScreen> {
     );
   }
 }
+

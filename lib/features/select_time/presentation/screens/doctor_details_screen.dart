@@ -1,13 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/widgets/custom_Appbar.dart';
-import 'package:doctor_hunt/core/widgets/custom_background%20.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/services.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/stats.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../widgets/doctor_info_details_screen.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class DoctorDetails extends StatefulWidget {
   const DoctorDetails({super.key});
@@ -46,3 +37,4 @@ class _DoctorDetailsState extends State<DoctorDetails> {
     );
   }
 }
+

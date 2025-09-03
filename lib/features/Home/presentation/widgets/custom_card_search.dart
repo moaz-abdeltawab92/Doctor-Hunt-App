@@ -1,9 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/app_text_buttton.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/custom_heart.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 //Todo fix Bug of the photo
 //Todo to be updated
@@ -164,3 +159,4 @@ class CustomCardSearchResult extends StatelessWidget {
     );
   }
 }
+

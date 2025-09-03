@@ -1,9 +1,4 @@
-import 'package:doctor_hunt/core/routing/onboarding_item_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/font_weight_helper.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/app_text_buttton.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 void showSuccessDialog(BuildContext context) {
   showDialog(
@@ -90,3 +85,4 @@ void showSuccessDialog(BuildContext context) {
     },
   );
 }
+

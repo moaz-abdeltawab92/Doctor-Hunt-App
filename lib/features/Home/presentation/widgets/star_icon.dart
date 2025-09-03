@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class StarIcon extends StatelessWidget {
   final bool isSelected;
@@ -16,3 +15,4 @@ class StarIcon extends StatelessWidget {
     );
   }
 }
+

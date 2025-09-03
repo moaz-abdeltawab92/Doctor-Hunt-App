@@ -1,9 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CustomAppbar2 extends StatelessWidget {
   const CustomAppbar2({
@@ -36,3 +31,4 @@ class CustomAppbar2 extends StatelessWidget {
     );
   }
 }
+

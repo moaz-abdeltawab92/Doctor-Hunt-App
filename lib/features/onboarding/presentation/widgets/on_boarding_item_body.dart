@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/routing/onboarding_item_routes.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class OnBoardinItemBody extends StatelessWidget {
   const OnBoardinItemBody({
@@ -42,3 +41,4 @@ class OnBoardinItemBody extends StatelessWidget {
     );
   }
 }
+

@@ -1,8 +1,4 @@
-import 'package:doctor_hunt/features/appointment/screens/doctor_appointment%20_screen.dart';
-import 'package:doctor_hunt/features/appointment/screens/time_appointment_view.dart';
-import 'package:doctor_hunt/features/auth/Data/repo/secure_storage_service.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -39,7 +35,7 @@ class MyApp extends StatelessWidget {
             }
 
             // final bool isLoggedIn = snapshot.data ?? false;
-            return MaterialApp(
+            return const MaterialApp(
                 debugShowCheckedModeBanner: false, home: TimeAppointmentView()
                 //  isLoggedIn ? const LoginScreen() : const SignupScreen(),
                 );
@@ -49,3 +45,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+

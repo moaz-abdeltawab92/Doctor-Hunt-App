@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/features/auth/presentation/widgets/login_screen_widget.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -9,3 +8,4 @@ class LoginScreen extends StatelessWidget {
     return const Scaffold(body: LoginScreenWidget());
   }
 }
+

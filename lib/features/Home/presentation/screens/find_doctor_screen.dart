@@ -1,11 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/widgets/custom_Appbar.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/search_result_list_view.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/search_text_field.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/widgets/custom_background .dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class FindDoctorScreen extends StatefulWidget {
   const FindDoctorScreen({super.key});
@@ -41,3 +34,4 @@ class _FindDoctorScreenState extends State<FindDoctorScreen> {
     );
   }
 }
+

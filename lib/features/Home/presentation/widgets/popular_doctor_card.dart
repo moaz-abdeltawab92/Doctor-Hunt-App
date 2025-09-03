@@ -1,9 +1,4 @@
-import 'package:doctor_hunt/core/routing/onboarding_item_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/Home/presentation/widgets/popular_doctor_list.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class PopularDoctorCard extends StatefulWidget {
   const PopularDoctorCard({
@@ -72,3 +67,4 @@ class _PopularDoctorCardState extends State<PopularDoctorCard> {
     );
   }
 }
+

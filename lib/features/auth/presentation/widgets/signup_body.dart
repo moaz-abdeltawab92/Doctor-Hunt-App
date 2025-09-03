@@ -1,12 +1,4 @@
-import 'dart:developer';
-
-import 'package:doctor_hunt/core/DI/dependency_ingection.dart';
-import 'package:doctor_hunt/core/constants/app_string.dart';
-import 'package:doctor_hunt/core/routing/auth_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/auth/Data/repo/auth_repo.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SignupBody extends StatefulWidget {
   const SignupBody({super.key});
@@ -225,3 +217,4 @@ class _SignupBodyState extends State<SignupBody> {
     );
   }
 }
+

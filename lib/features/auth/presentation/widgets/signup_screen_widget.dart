@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/auth/presentation/widgets/signup_body.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SignupScreenWidget extends StatelessWidget {
   const SignupScreenWidget({
@@ -33,3 +31,4 @@ class SignupScreenWidget extends StatelessWidget {
     );
   }
 }
+

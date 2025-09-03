@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/routing/profile_screen_routes.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -26,3 +26,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+

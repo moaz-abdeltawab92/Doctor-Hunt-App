@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/features/appointment/screens/time_appointment_view_body.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class TimeAppointmentView extends StatelessWidget {
   const TimeAppointmentView({super.key});
@@ -11,3 +10,4 @@ class TimeAppointmentView extends StatelessWidget {
     );
   }
 }
+

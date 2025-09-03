@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/routing/homepage_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class WhoIsPatientText extends StatelessWidget {
   const WhoIsPatientText({super.key});
@@ -22,3 +20,4 @@ class WhoIsPatientText extends StatelessWidget {
     );
   }
 }
+

@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class ProfilePicture extends StatelessWidget {
   const ProfilePicture({super.key});
@@ -19,3 +17,4 @@ class ProfilePicture extends StatelessWidget {
     );
   }
 }
+

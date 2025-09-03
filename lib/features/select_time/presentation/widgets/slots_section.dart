@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/slot_button.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SlotsSection extends StatelessWidget {
   const SlotsSection({super.key});
@@ -50,3 +47,4 @@ class SlotsSection extends StatelessWidget {
     );
   }
 }
+

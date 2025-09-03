@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CustomBackground extends StatelessWidget {
   const CustomBackground({
@@ -25,3 +24,4 @@ class CustomBackground extends StatelessWidget {
     );
   }
 }
+

@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/routing/settings_screen_routes.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
@@ -29,3 +29,4 @@ class SettingScreen extends StatelessWidget {
     );
   }
 }
+

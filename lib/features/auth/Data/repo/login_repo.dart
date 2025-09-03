@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/features/auth/Data/api/api_service_login.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class LoginRepo {
   ApiServiceLogin apiServiceLogin;
@@ -9,3 +9,4 @@ class LoginRepo {
     apiServiceLogin.login(email: email, password: password);
   }
 }
+

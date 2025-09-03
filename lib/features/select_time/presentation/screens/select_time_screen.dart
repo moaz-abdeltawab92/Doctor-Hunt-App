@@ -1,12 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/core/widgets/custom_Appbar.dart';
-import 'package:doctor_hunt/core/widgets/custom_background%20.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/avaliable_days.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/bottom_buttons.dart';
-import 'package:doctor_hunt/features/select_time/presentation/widgets/doctor_info.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SelectTimeScreen extends StatefulWidget {
   const SelectTimeScreen({super.key});
@@ -44,3 +36,4 @@ class _SelectTimeScreenState extends State<SelectTimeScreen> {
     );
   }
 }
+

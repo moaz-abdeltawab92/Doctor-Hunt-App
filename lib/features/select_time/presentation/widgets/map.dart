@@ -1,7 +1,6 @@
-// map_widget.dart
-import 'package:doctor_hunt/core/routing/profile_screen_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
+// map_widget.dart
 class MapWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,3 +20,4 @@ class MapWidget extends StatelessWidget {
     );
   }
 }
+

@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 //Todo : Don't forget to use this file for password validation
 class PasswordValidation extends StatelessWidget {
@@ -55,3 +54,4 @@ class PasswordValidation extends StatelessWidget {
     );
   }
 }
+

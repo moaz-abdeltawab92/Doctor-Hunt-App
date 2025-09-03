@@ -1,7 +1,4 @@
-import 'dart:developer';
-
-import 'secure_storage_service.dart';
-import '../api/api_service_regisiter.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class AuthRepo {
   final ApiServiceRegisiter apiService;
@@ -41,3 +38,4 @@ class AuthRepo {
     }
   }
 }
+

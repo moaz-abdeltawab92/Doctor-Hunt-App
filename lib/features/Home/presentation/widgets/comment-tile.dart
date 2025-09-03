@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class CommentTile extends StatelessWidget {
   final String name;
@@ -33,3 +32,4 @@ class CommentTile extends StatelessWidget {
     required this.image,
   });
 }
+

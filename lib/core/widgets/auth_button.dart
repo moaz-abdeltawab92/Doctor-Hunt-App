@@ -1,5 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class AuthButton extends StatelessWidget {
   final String text;
@@ -35,3 +34,4 @@ class AuthButton extends StatelessWidget {
     );
   }
 }
+

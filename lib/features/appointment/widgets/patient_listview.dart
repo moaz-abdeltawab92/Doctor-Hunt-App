@@ -1,10 +1,4 @@
-import 'package:doctor_hunt/core/routing/onboarding_item_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/features/appointment/widgets/custom_image_column.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'patient_list.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class PatientListView extends StatelessWidget {
   const PatientListView({super.key});
@@ -69,3 +63,4 @@ class PatientListView extends StatelessWidget {
     );
   }
 }
+

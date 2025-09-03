@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/routing/profile_screen_routes.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class BookNowButton extends StatelessWidget {
   final String text;
@@ -35,3 +33,4 @@ class BookNowButton extends StatelessWidget {
     );
   }
 }
+

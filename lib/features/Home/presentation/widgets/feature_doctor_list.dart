@@ -1,4 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 List<Map<String, String>> doctorsList = [
   {
@@ -27,3 +27,4 @@ List<Map<String, String>> doctorsList = [
     'rating': '3.5',
   },
 ];
+

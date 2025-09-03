@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SeeAll extends StatelessWidget {
   const SeeAll({
@@ -27,3 +25,4 @@ class SeeAll extends StatelessWidget {
     );
   }
 }
+

@@ -1,10 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:doctor_hunt/core/helpers/spacer.dart';
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:doctor_hunt/features/profile/widgets/customAppBar.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class HeaderSection extends StatelessWidget {
   const HeaderSection({super.key});
@@ -58,3 +52,4 @@ class HeaderSection extends StatelessWidget {
     );
   }
 }
+

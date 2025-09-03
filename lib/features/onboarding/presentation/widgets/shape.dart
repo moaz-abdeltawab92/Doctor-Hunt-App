@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class Shape extends StatelessWidget {
   const Shape({
@@ -19,3 +17,4 @@ class Shape extends StatelessWidget {
     );
   }
 }
+

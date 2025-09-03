@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/features/Home/presentation/widgets/star_icon.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class SelectTimeCustomStarsRating extends StatefulWidget {
   const SelectTimeCustomStarsRating({
@@ -43,3 +41,4 @@ class _SelectTimeCustomStarsRatingState
     );
   }
 }
+

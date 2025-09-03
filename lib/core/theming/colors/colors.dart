@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class AppColors {
   AppColors._();
@@ -74,3 +74,4 @@ class AppColors {
   static const Color patientContainer = Color.fromARGB(255, 159, 207, 190);
   static const Color patientContainerText = Color(0xFF0EBE7F);
 }
+

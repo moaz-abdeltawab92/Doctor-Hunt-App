@@ -1,8 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/font_weight_helper.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class AppTextStyles {
   static TextStyle font24WhiteBold = GoogleFonts.sora(
@@ -264,3 +260,4 @@ class AppTextStyles {
     color: AppColors.patientContainerText,
   );
 }
+

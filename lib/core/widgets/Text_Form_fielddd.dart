@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/theming/colors/colors.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class AppTextFormField extends StatelessWidget {
   final EdgeInsetsGeometry? contentPadding;
@@ -150,3 +147,4 @@ class AppTextFormField extends StatelessWidget {
 // AppTextFormField, which is a specialized text input field for a Flutter
 // application. This widget is designed to be reusable and customizable,
 //with several properties that allow for flexible styling and behavior.
+

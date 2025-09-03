@@ -1,6 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_string.dart';
-import 'package:doctor_hunt/core/theming/style/app_text_styles.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class Skip extends StatelessWidget {
   const Skip({
@@ -22,3 +20,4 @@ class Skip extends StatelessWidget {
         });
   }
 }
+

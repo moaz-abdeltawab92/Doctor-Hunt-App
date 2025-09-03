@@ -1,7 +1,4 @@
-import 'package:doctor_hunt/core/constants/app_assets.dart';
-import 'package:doctor_hunt/core/constants/app_string.dart';
-import 'package:doctor_hunt/features/onboarding/presentation/widgets/onboarding_item.dart';
-import 'package:flutter/material.dart';
+import 'package:doctor_hunt/core/routing/route_export.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -50,3 +47,4 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 }
+

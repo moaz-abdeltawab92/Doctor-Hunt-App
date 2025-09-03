@@ -23,7 +23,7 @@ class SignupScreenWidget extends StatelessWidget {
         ),
       ),
       child: const Padding(
-        padding: EdgeInsets.only(top: 135),
+        padding: EdgeInsets.only(top: 80),
         child: SingleChildScrollView(
           child: SignupBody(),
         ),
@@ -31,4 +31,3 @@ class SignupScreenWidget extends StatelessWidget {
     );
   }
 }
-

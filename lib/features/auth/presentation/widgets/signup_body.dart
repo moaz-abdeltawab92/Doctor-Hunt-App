@@ -36,7 +36,7 @@ class _SignupBodyState extends State<SignupBody> {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: EmailField(
             controller: _nameController,
-            hintText: "Name",
+            hintText: 'Name',
           ),
         ),
         verticalSpace(15),
@@ -44,7 +44,7 @@ class _SignupBodyState extends State<SignupBody> {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: EmailField(
             controller: _emailController,
-            hintText: "Email",
+            hintText: 'Email',
           ),
         ),
         verticalSpace(15),
@@ -52,7 +52,7 @@ class _SignupBodyState extends State<SignupBody> {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: EmailField(
             controller: _phoneController,
-            hintText: "Phone",
+            hintText: 'Phone',
           ),
         ),
         verticalSpace(15),
@@ -96,7 +96,7 @@ class _SignupBodyState extends State<SignupBody> {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: PasswordField(
             controller: _passwordController,
-            hintText: "Password ",
+            hintText: 'Password ',
             isObscure: isObscure,
             toggleObscure: () {
               setState(() {
@@ -110,7 +110,7 @@ class _SignupBodyState extends State<SignupBody> {
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: PasswordField(
             controller: _confirmPasswordController,
-            hintText: "Confirm Password ",
+            hintText: 'Confirm Password ',
             isObscure: isObscure,
             toggleObscure: () {
               setState(() {
@@ -200,7 +200,7 @@ class _SignupBodyState extends State<SignupBody> {
               );
             }
           },
-          text: "Sign up",
+          text: 'Sign up',
         ),
         verticalSpace(8),
         AccountStatus(
@@ -210,11 +210,10 @@ class _SignupBodyState extends State<SignupBody> {
               MaterialPageRoute(builder: (context) => const LoginScreen()),
             );
           },
-          title: "Have an account? ",
-          title2: "Log in",
+          title: 'Have an account? ',
+          title2: 'Log in',
         ),
       ],
     );
   }
 }
-

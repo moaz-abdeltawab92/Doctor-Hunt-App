@@ -32,6 +32,7 @@ class _LoginBodyState extends State<LoginBody> {
         SubTitle(
           text: AppString.subtitleAuth,
         ),
+        verticalSpace(40),
         const SocialLoginButtons(),
         verticalSpace(40),
         Padding(
@@ -101,11 +102,11 @@ class _LoginBodyState extends State<LoginBody> {
               );
             }
           },
-          text: "Login",
+          text: 'Login',
         ),
         verticalSpace(20),
         const ForgotPassword(),
-        verticalSpace(100),
+        verticalSpace(50),
         AccountStatus(
           onTap: () {
             Navigator.push(
@@ -114,10 +115,9 @@ class _LoginBodyState extends State<LoginBody> {
             );
           },
           title: "Don't have an account?",
-          title2: "Join us",
+          title2: 'Join us',
         ),
       ],
     );
   }
 }
-

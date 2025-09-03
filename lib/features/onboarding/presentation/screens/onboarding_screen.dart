@@ -28,18 +28,24 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               title: AppString.headonboarding1,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
+              currentPage: currentPage,
+              isLastPage: false,
             ),
             OnboardingItem(
               imagePath: AppAssets.onboarding2,
               title: AppString.headonboarding2,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
+              currentPage: currentPage,
+              isLastPage: false,
             ),
             OnboardingItem(
               imagePath: AppAssets.onboarding3,
               title: AppString.headonboarding3,
               description: AppString.descriptionOnboarding,
               pageController: _pageController,
+              currentPage: currentPage,
+              isLastPage: true,
             ),
           ],
         ),
@@ -47,4 +53,3 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 }
-

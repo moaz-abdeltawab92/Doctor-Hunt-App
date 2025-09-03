@@ -7,12 +7,16 @@ class OnBoardinItemBody extends StatelessWidget {
     required this.title,
     required this.description,
     required this.pageController,
+    required this.currentPage,
+    required this.isLastPage,
   });
 
   final String imagePath;
   final String title;
   final String description;
   final PageController pageController;
+  final int currentPage;
+  final bool isLastPage;
 
   @override
   Widget build(BuildContext context) {
@@ -32,13 +36,18 @@ class OnBoardinItemBody extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             verticalSpace(40),
-            GetStarted(pageController: pageController),
+            GetStarted(
+              pageController: pageController,
+              isLastPage: isLastPage,
+            ),
             verticalSpace(5),
-            const Skip(),
+            // Show Skip button only on first page (currentPage == 0)
+            currentPage == 0
+                ? Skip(pageController: pageController)
+                : const SizedBox.shrink(),
           ],
         ),
       ],
     );
   }
 }
-

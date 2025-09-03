@@ -5,6 +5,8 @@ class OnboardingItem extends StatelessWidget {
   final String title;
   final String description;
   final PageController pageController;
+  final int currentPage;
+  final bool isLastPage;
 
   const OnboardingItem({
     super.key,
@@ -12,6 +14,8 @@ class OnboardingItem extends StatelessWidget {
     required this.title,
     required this.description,
     required this.pageController,
+    required this.currentPage,
+    required this.isLastPage,
   });
 
   @override
@@ -20,7 +24,8 @@ class OnboardingItem extends StatelessWidget {
         imagePath: imagePath,
         title: title,
         description: AppString.descriptionOnboarding,
-        pageController: pageController);
+        pageController: pageController,
+        currentPage: currentPage,
+        isLastPage: isLastPage);
   }
 }
-

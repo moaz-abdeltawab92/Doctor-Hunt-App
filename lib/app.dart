@@ -1,4 +1,5 @@
 import 'package:doctor_hunt/core/routing/route_export.dart';
+import 'package:doctor_hunt/features/onboarding/presentation/screens/onboarding_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
 
             // final bool isLoggedIn = snapshot.data ?? false;
             return const MaterialApp(
-                debugShowCheckedModeBanner: false, home: TimeAppointmentView()
+                debugShowCheckedModeBanner: false, home: OnboardingScreen()
                 //  isLoggedIn ? const LoginScreen() : const SignupScreen(),
                 );
           },
@@ -45,4 +46,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
